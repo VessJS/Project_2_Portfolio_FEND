@@ -1,0 +1,164 @@
+/*COLORS
+#02b3e4
+#2d3c49
+#7d97ad
+*/
+
+/************HEADER**************/
+
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 20px 10%;
+}
+
+header {
+	border-bottom: 3px solid #02b3e4;
+}
+
+.header__logo {
+	width: 70px;
+	height: 70px;
+}
+
+.title {
+	text-align: right;
+	font-family: 'Karma', serif;
+}
+
+.name {
+	margin: auto;
+}
+
+.fa-linkedin {
+	color: #0077b5;
+	font-size: 30px;
+}
+
+/************MAIN IMAGE***************/
+
+.img__wrap {
+	position: relative;
+	width: 80%;
+}
+
+.main__image {
+	width: 100%;
+	height: 50%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: rgba(0, 140, 186, 0.7);
+}
+
+.img__description {
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+.img__wrap:hover .overlay {
+	opacity: 1;
+}
+
+/************WORK***************/
+
+.container {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 10px 0 60px;
+	text-align: center;
+}
+
+.work {
+	width: 30%;
+	margin-bottom: 20px;
+	padding: 20px 10px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.work img {
+	width: 100%;
+	height: 60%;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.4);
+}
+
+.work img:hover {
+	opacity: 0.8;
+}
+
+.box__title {
+	width: 100%;
+	margin-top: 60px;
+	margin-bottom: 10%;
+	font-size: 25px;
+	font-weight: bold;
+	word-wrap: break-word;
+	font-family: 'Karma', serif;
+}
+
+.work a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #7d97ad;
+}
+
+.work a:hover {
+	color: #02b3e4;
+	border-radius: 2px;
+}
+
+
+@media screen and (max-width: 900px) {
+	.work {
+		width: 45%;
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.work {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.header__logo {
+		width: 30px;
+		height: 30px;
+	}
+}
